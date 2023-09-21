@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.center {
+    display: block;
+    width: 60%;
+}
+
+body {
+    background-color: beige;
+    background-image: url(beige-grunge.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.schoollogos {
+    height: 100px;
+}
+
+img{
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+div.column>img {
+    border-radius: 25px;
+}
+
+img:hover {
+    transform:scale(1.25);
+}
+.container {
+    display: grid;
+    grid-template-columns:20% 20% 20%;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    height: 60%;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
